@@ -16,7 +16,7 @@ class ThinkPHP6ValetDriver extends ValetDriver
      */
     public function serves($sitePath, $siteName, $uri)
     {
-        return true;
+        return file_exists($sitePath . '/think');
     }
 
     /**
